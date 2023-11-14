@@ -4,6 +4,7 @@
  * @format
  */
 import React from 'react';
+import { useState } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -16,10 +17,23 @@ import {
 } from 'react-native';
 import ToDoList from './ToDoList';
 
+const defaultTasks = [
+  'Do laundry',
+  'Go to gym',
+  'Walk dog'
+]
 function App() {
+  
+const [tasks, setTasks] = useState(defaultTasks);
+
+//useless for now 
+const addTask = (task) => {
+  setTasks([...tasks, task]);
+}
+
   return (
     <SafeAreaView>
-      <ToDoList />  
+      <ToDoList tasks={tasks}/>  
       <View style={styles.form}>
         <TextInput
           style={styles.input}
