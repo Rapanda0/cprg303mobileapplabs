@@ -6,9 +6,9 @@ import {
     View, 
     Text 
 } from 'react-native';
-import ToDoList from '../components/ToDoList';
-import ToDoForm from '../components/ToDoForm';
+import DumbAnimeShit from '../components/DumbAnimeShit';
 import MainLayout from '../layouts/MainLayout';
+
 
 function AboutScreen({ navigation }) {  
   
@@ -19,6 +19,7 @@ function AboutScreen({ navigation }) {
         <Text>Current Date: Nov 23 2023</Text>
         <Text/>
         <Text>sorry i am too lazy to style any of this or put these in a component</Text>
+        <DumbAnimeShit/>
     </MainLayout>
    
     
